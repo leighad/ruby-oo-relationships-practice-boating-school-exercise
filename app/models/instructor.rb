@@ -13,4 +13,7 @@ class Instructor
         @@all
     end
 
+    def add_boating_test(student,test_name, test_status)
+        BoatingTest.new(student, test_name, test_status, self)
+    end
 end
